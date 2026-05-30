@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.inicio {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px 0;
+}
+
+.inicio h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.inicio p {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.card-produto {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-produto h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.card-produto p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c0392b;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.produto-page {
+    padding: 50px 0;
+}
+
+.produto-page img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.produto-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.produto-page .preco {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.produto-page ul {
+    padding-left: 20px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.voltar:hover {
+    color: #c0392b;
+}
