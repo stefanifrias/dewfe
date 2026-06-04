@@ -1,0 +1,19 @@
+#camposEstudante {
+    display: none;
+}
+
+#senha.valida {
+    border-color: green;
+}
+
+#senha.invalida {
+    border-color: red;
+}
+
+#msgSenha.valida {
+    color: green;
+}
+
+#msgSenha.invalida {
+    color: red;
+}

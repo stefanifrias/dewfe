@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03/06</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        Nome: <input type="text" name="Nome"> <br> <br>
+
+        Senha: <input type="password" name="Senha" id="senha" oninput="validarSenha()">
+        <button type="button" onclick="toggleSenha()">Mostrar/Ocultar</button> <br>
+        <span id="msgSenha"></span>
+        <br>
+
+        <input type="checkbox" name="Estudante" id="estud" value="estudante" onclick="toggleEstudante()">
+        <label for="estud"> Sou estudante</label> <br> <br>
+
+        <div id="camposEstudante">
+            Curso: <input type="text" name="Curso"> <br> <br>
+            Instituição: <input type="text" name="Instituicao"> <br> <br>
+            Período: <input type="date" name="Inicio"> a <input type="date" name="Fim"> <br> <br>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
