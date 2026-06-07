@@ -1,0 +1,297 @@
+:root {
+    --altura-header: 20vh;
+    --altura-article: 30vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: var(--altura-header);
+    background: linear-gradient(90deg, #e9e7d8, #e9e7d8 60%, orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo-img {
+    height: 60px;
+    width: auto;
+    border-radius: 6px;
+    transition: transform 1s ease;
+}
+
+#logo-img:hover {
+    transform: rotate(360deg);
+}
+
+#logo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-style: normal;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: scale(1.5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-main {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+}
+
+#header-main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #111;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+#header-main p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+#proximos-eventos {
+    width: 90%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#proximos-eventos h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 8px;
+}
+
+#proximos-eventos > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    text-align: left;
+    transition: 0.3s ease;
+ 
+}
+
+.evento:hover {
+    background-color: orange;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.evento img {
+    height: 100px;
+    width: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.dados-evento h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.dados-evento .data,
+.dados-evento .local {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: #555;
+     text-align: left;
+}
+
+.evento:hover .dados-evento h4,
+.evento:hover .data,
+.evento:hover .local {
+    color: #fff;
+}
+
+section {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 24px 32px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.0rem;
+    color: orange;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px
+}
+
+section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: #444;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    height: 28px;
+    padding: 4px 8px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+textarea {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    resize: vertical;
+}
+
+label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.95rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: yellowgreen;
+    transform: scale(1.01);
+}
+
+button[type="reset"]:hover {
+    background-color: orange;
+    transform: scale(1.01);
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
